@@ -15,12 +15,21 @@ public class SprintOneAllOperations extends BrowserLaunch {
 	@Test	
 	public void AllactionsUiTest()throws Exception
 	{
+		
 		AllActions = new AllOperationsUi(driver);
 		
 		AllActions.SignInPage();
 		AllActions.DashboardPage();
-		AllActions.Users( driver);
+		AllActions.UsersList( driver);
+		AllActions.Userskyc();
+		AllActions.RedeemGoldUsers();
+		AllActions.SchemeList();
+		AllActions.GoldPlusPlanUsers();
+		AllActions.MyGoldPlanUsers();
+		AllActions.PhysicalGoldUsers();
+		AllActions.BuyGoldContent();
 		
-		//driver.close();
+		
+	    driver.close();
 	}
 }
