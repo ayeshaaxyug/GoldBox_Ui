@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 
 import genericUtility.WebDriverUtility;
 
-public class AllOperationsUi {
+public class AllOperationsUiSprintOne {
 	
 	// All Operations for Sprint One
 	
@@ -169,7 +169,7 @@ public class AllOperationsUi {
 	@FindBy(xpath ="(//div[@class='mdc-form-field'])[1]") private WebElement BGCBootStrapBtn;
 
 
-	public AllOperationsUi(WebDriver driver) 
+	public AllOperationsUiSprintOne(WebDriver driver) 
 	{	
 		PageFactory.initElements(driver, this);
 	}	

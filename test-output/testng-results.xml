@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-07-25T15:46:25 IST" name="Default suite" finished-at="2024-07-25T15:51:09 IST" duration-ms="284471">
+  <suite started-at="2024-07-26T10:15:37 IST" name="Default suite" finished-at="2024-07-26T10:20:26 IST" duration-ms="289219">
     <groups>
     </groups>
-    <test started-at="2024-07-25T15:46:25 IST" name="Default test" finished-at="2024-07-25T15:51:09 IST" duration-ms="284471">
+    <test started-at="2024-07-26T10:15:37 IST" name="Default test" finished-at="2024-07-26T10:20:26 IST" duration-ms="289219">
       <class name="Sprint_One.SprintOneAllOperations">
-        <test-method is-config="true" signature="setup()[pri:0, instance:Sprint_One.SprintOneAllOperations@17fc391b]" started-at="2024-07-25T15:46:25 IST" name="setup" finished-at="2024-07-25T15:46:36 IST" duration-ms="11185" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Sprint_One.SprintOneAllOperations@17fc391b]" started-at="2024-07-26T10:15:37 IST" name="setup" finished-at="2024-07-26T10:15:52 IST" duration-ms="15269" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="AllactionsUiTest()[pri:0, instance:Sprint_One.SprintOneAllOperations@17fc391b]" started-at="2024-07-25T15:46:36 IST" name="AllactionsUiTest" finished-at="2024-07-25T15:51:09 IST" duration-ms="273223" status="PASS">
+        <test-method signature="AllactionsUiTest()[pri:0, instance:Sprint_One.SprintOneAllOperations@17fc391b]" started-at="2024-07-26T10:15:52 IST" name="AllactionsUiTest" finished-at="2024-07-26T10:20:26 IST" duration-ms="273875" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AllactionsUiTest -->

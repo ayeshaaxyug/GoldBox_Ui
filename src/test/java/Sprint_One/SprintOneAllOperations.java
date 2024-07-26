@@ -4,11 +4,11 @@ package Sprint_One;
 import org.testng.annotations.Test;
 
 import FMSBaseClass.BrowserLaunch;
-import SprintOneUi.AllOperationsUi;
+import SprintOneUi.AllOperationsUiSprintOne;
 
 public class SprintOneAllOperations extends BrowserLaunch {
 	
-	 AllOperationsUi AllActions;
+	 AllOperationsUiSprintOne AllActions;
 	
 	// Calling Methods
 	
@@ -16,7 +16,7 @@ public class SprintOneAllOperations extends BrowserLaunch {
 	public void AllactionsUiTest()throws Exception
 	{
 		
-		AllActions = new AllOperationsUi(driver);
+		AllActions = new AllOperationsUiSprintOne(driver);
 		
 		AllActions.SignInPage();
 		AllActions.DashboardPage();
