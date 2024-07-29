@@ -12,8 +12,7 @@ public class AllOperationsUiSprintOne {
 	
 	// All Operations for Sprint One
 	
-	public static WebDriver driver;
-	
+	public static WebDriver driver;	
 	WebDriverUtility wUtility = new WebDriverUtility();
 	
 	// Sign In
@@ -30,8 +29,8 @@ public class AllOperationsUiSprintOne {
 	@FindBy(xpath ="//span[.='Dashboard']") private WebElement DashboardTextLnk; 	
 	@FindBy(xpath ="//label[@id='mat-mdc-form-field-label-0']") private WebElement EnterDateText;	
 	@FindBy(xpath ="//span[@class='mat-mdc-button-touch-target']") private WebElement CalendorIconLnk; 	
-	@FindBy(xpath ="//button[.='Total Amount : ₹0.00']") private WebElement TotalAmountText; 	
-	@FindBy(xpath ="//button[.='Total Grams : 0g']") private WebElement TotalGramsText;	
+	@FindBy(xpath ="//button[@class='btn btn-added']") private WebElement TotalAmountText; 	
+	@FindBy(xpath ="//button[@class='btn btn-added mt-2']") private WebElement TotalGramsText;	
 	@FindBy(xpath ="//p[.='24K Gold 999 Purity']") private WebElement TFkGoldLiveRateText;	
 	@FindBy(xpath ="//p[.='22K Gold 916 Purity']") private WebElement TTkGoldLiveRateText;	
 	@FindBy(xpath ="//a[@id='toggle_btn']") private WebElement ToggleBtn;	
@@ -94,7 +93,6 @@ public class AllOperationsUiSprintOne {
 	@FindBy(xpath ="(//button[.='View'])[1]") private WebElement RGUViewBtn;
 	@FindBy(xpath ="(//button[.='Redeem Gold'])[1]") private WebElement RGURedeemGoldBtn;	
 	@FindBy(xpath ="//input[@class='mdc-checkbox__native-control']") private WebElement RGUShowAllBtn;
-
 	
 	// Schemes -- Scheme List
 	
@@ -113,59 +111,38 @@ public class AllOperationsUiSprintOne {
 	// Schemes -- Gold Plus Plan Users
 	
 	@FindBy(xpath ="//a[.='Gold Plus Plan Users']") private WebElement GoldPlusPlanUsersLnk;
-	
 	@FindBy(xpath ="//h4[.='Scheme Users']") private WebElement SchemesUsersText;
-
-	@FindBy(xpath ="//input[@placeholder='Search...']") private WebElement GPPUSearchEdt;
-	
+	@FindBy(xpath ="//input[@placeholder='Search...']") private WebElement GPPUSearchEdt;	
 	@FindBy(xpath ="//span[.='Scheme Users :']") private WebElement GPPUSchemeUsersBtn;
-
 	@FindBy(xpath ="(//button[.=' Info '])[1]") private WebElement GPPUInfoBtn;
 	
 	// Schemes -- My Gold Plan Users
 	
-	@FindBy(xpath ="//a[.='My Gold Plan Users']") private WebElement SchemesMyGoldPlanUsersLnk;
-	
+	@FindBy(xpath ="//a[.='My Gold Plan Users']") private WebElement SchemesMyGoldPlanUsersLnk;	
 	@FindBy(xpath ="//h4[.='My Gold Plan Users']") private WebElement MYGoldPlanUsersText;
-
-	@FindBy(xpath ="//input[@placeholder='Search...']") private WebElement MGPUSearchEdt;
-	
+	@FindBy(xpath ="//input[@placeholder='Search...']") private WebElement MGPUSearchEdt;	
 	@FindBy(xpath ="//button[.='All Users']") private WebElement AllUsersBtn;
-
-	@FindBy(xpath ="//button[.='Daily Users']") private WebElement DailyUsersBtn;
-	
+	@FindBy(xpath ="//button[.='Daily Users']") private WebElement DailyUsersBtn;	
 	@FindBy(xpath ="//button[.='Weekly Users']") private WebElement WeeklyUsersBtn;
-
-	@FindBy(xpath ="//button[.='Monthly Users']") private WebElement MonthlyUsersBtn;
-	
+	@FindBy(xpath ="//button[.='Monthly Users']") private WebElement MonthlyUsersBtn;	
 	@FindBy(xpath ="(//button[.=' Info '])[1]") private WebElement MGPUInfoBtn;
 	
 	// Schemes -- Physical Gold Users
 	
-	@FindBy(xpath ="//a[.='Physical Gold Users']") private WebElement SchemesPhysicalGoldUsersLnk;
-	
+	@FindBy(xpath ="//a[.='Physical Gold Users']") private WebElement SchemesPhysicalGoldUsersLnk;	
 	@FindBy(xpath ="//h4[.='Physical Gold Users']") private WebElement PhysicalGoldUsersText;
-
-	@FindBy(xpath ="//span[.='Physical Gold Users :']") private WebElement PhysicalGoldUsersCountLnk;
-	
+	@FindBy(xpath ="//span[.='Physical Gold Users :']") private WebElement PhysicalGoldUsersCountLnk;	
 	@FindBy(xpath ="//input[@placeholder='Search...']") private WebElement PGUSearchEdt;
 	
 	// Buy Gold Content
 	
-	@FindBy(xpath ="//span[.='Buy Gold Content']") private WebElement BuyGoldContentLnk;
-	
+	@FindBy(xpath ="//span[.='Buy Gold Content']") private WebElement BuyGoldContentLnk;	
 	@FindBy(xpath ="//h4[.='Buy Gold Content']") private WebElement BuyGoldContenttext;
-
 	@FindBy(xpath ="//input[@placeholder='Search...']") private WebElement BGCSearchEdt;
-	
 	@FindBy(xpath ="//button[.='Add Content']") private WebElement BGCAddContentBtn;
-
-	@FindBy(xpath ="//button[@data-bs-target='#buygold18']") private WebElement ContentBtn;
-	
+	@FindBy(xpath ="//button[@data-bs-target='#buygold18']") private WebElement ContentBtn;	
 	@FindBy(xpath ="//button[@data-bs-target='#content18']") private WebElement ExplanationBtn;
-
-	@FindBy(xpath ="(//button[.=' Edit '])[1]") private WebElement BGCEditBtn;
-	
+	@FindBy(xpath ="(//button[.=' Edit '])[1]") private WebElement BGCEditBtn;	
 	@FindBy(xpath ="(//div[@class='mdc-form-field'])[1]") private WebElement BGCBootStrapBtn;
 
 
@@ -224,7 +201,7 @@ public class AllOperationsUiSprintOne {
 
 		boolean CalendorIcon = CalendorIconLnk.isDisplayed();
 		System.out.println("CalendorIcon Displayed :"+CalendorIcon);
-		Thread.sleep(2000);
+		Thread.sleep(4000);
 
 		boolean TotalAmount = TotalAmountText.isDisplayed();
 		System.out.println("Total Amount Text Displayed :"+TotalAmount);

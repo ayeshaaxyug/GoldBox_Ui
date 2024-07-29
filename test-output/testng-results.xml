@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-07-26T10:15:37 IST" name="Default suite" finished-at="2024-07-26T10:20:26 IST" duration-ms="289219">
+  <suite started-at="2024-07-29T17:22:03 IST" name="Default suite" finished-at="2024-07-29T17:23:37 IST" duration-ms="94007">
     <groups>
     </groups>
-    <test started-at="2024-07-26T10:15:37 IST" name="Default test" finished-at="2024-07-26T10:20:26 IST" duration-ms="289219">
-      <class name="Sprint_One.SprintOneAllOperations">
-        <test-method is-config="true" signature="setup()[pri:0, instance:Sprint_One.SprintOneAllOperations@17fc391b]" started-at="2024-07-26T10:15:37 IST" name="setup" finished-at="2024-07-26T10:15:52 IST" duration-ms="15269" status="PASS">
+    <test started-at="2024-07-29T17:22:03 IST" name="Default test" finished-at="2024-07-29T17:23:37 IST" duration-ms="94007">
+      <class name="Sprint_Two.SprintTwoAllOperations">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Sprint_Two.SprintTwoAllOperations@17fc391b]" started-at="2024-07-29T17:22:03 IST" name="setup" finished-at="2024-07-29T17:22:12 IST" duration-ms="9427" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="AllactionsUiTest()[pri:0, instance:Sprint_One.SprintOneAllOperations@17fc391b]" started-at="2024-07-26T10:15:52 IST" name="AllactionsUiTest" finished-at="2024-07-26T10:20:26 IST" duration-ms="273875" status="PASS">
+        <test-method signature="AllOperationsUiTest()[pri:0, instance:Sprint_Two.SprintTwoAllOperations@17fc391b]" started-at="2024-07-29T17:22:12 IST" name="AllOperationsUiTest" finished-at="2024-07-29T17:23:37 IST" duration-ms="84499" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- AllactionsUiTest -->
-      </class> <!-- Sprint_One.SprintOneAllOperations -->
+        </test-method> <!-- AllOperationsUiTest -->
+      </class> <!-- Sprint_Two.SprintTwoAllOperations -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

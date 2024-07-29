@@ -17,6 +17,7 @@ public class SprintOneAllOperations extends BrowserLaunch {
 	{
 		
 		AllActions = new AllOperationsUiSprintOne(driver);
+	
 		
 		AllActions.SignInPage();
 		AllActions.DashboardPage();
