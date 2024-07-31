@@ -22,6 +22,7 @@ public class SprintTwoAllOperations extends BrowserLaunch {
 		AllOperations.Category();
 		AllOperations.Subcategory();
 		AllOperations.Products();
+		AllOperations.Brands();
 		AllOperations.EcommerceOrders();
 		AllOperations.EcommerceTransactions();
 		AllOperations.Banners();
@@ -34,7 +35,16 @@ public class SprintTwoAllOperations extends BrowserLaunch {
 		AllOperations.GiftCards();
 		AllOperations.AllGiftCards();
 		AllOperations.Notifications();
-		
+		AllOperations.Transactions();
+		AllOperations.Trading();
+		AllOperations.Events();
+		AllOperations.LedgerReports();
+		AllOperations.TransactionsReport();
+		AllOperations.Settings();
+		AllOperations.OtpList();
+		AllOperations.AppManagement();
+		AllOperations.Roles();
+		AllOperations.FmsUsers();
 		
 		
 		driver.close();

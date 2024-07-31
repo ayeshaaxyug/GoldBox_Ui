@@ -12,6 +12,7 @@ public class AllOperationsUiSprintTwo
 
 	// All Operations for Sprint Two
 	
+	
 	public static WebDriver driver;	
 	WebDriverUtility wUtility = new WebDriverUtility();
 
@@ -67,6 +68,16 @@ public class AllOperationsUiSprintTwo
 	@FindBy(xpath ="(//button[.=' Edit '])[1]") private WebElement ProductsEditBtn;
 	@FindBy(xpath ="(//div[@class='mdc-switch__track'])[1]") private WebElement ProductsBootstrapBtn;
 	@FindBy(xpath ="(//button[@class='btn-sm btn-edit bg-danger'])[1]") private WebElement ProductsDeleteBtn;
+	
+	// Ecommerce - Brands
+	
+	@FindBy(xpath ="//a[.='Brands']") private WebElement BrandsLnk;
+	@FindBy(xpath ="//h4[.='Brands']") private WebElement BrandsTextLnk;
+	@FindBy(xpath ="//button[.='Add Brand']") private WebElement BrandsAddBrandsBtn;
+	@FindBy(xpath ="//input[@placeholder='Search...']") private WebElement BrandsSearchEdt;
+	@FindBy(xpath ="(//button[.=' Edit '])[1]") private WebElement BrandsEditBtn;
+	@FindBy(xpath ="(//div[@class='mdc-form-field'])[1]") private WebElement BrandsBootStrapBtn;
+	@FindBy(xpath ="(//button[@class='btn-sm btn-edit bg-danger'])[1]") private WebElement BrandsDeleteBtn;
 	
 	// Ecommerce - Orders
 	
@@ -170,7 +181,86 @@ public class AllOperationsUiSprintTwo
 	@FindBy(xpath ="(//button[@class='btn-sm btn-edit bg-danger'])[1]") private WebElement NotificationDeleteBtn;
 	@FindBy(xpath ="(//button[@class='btn-sm btn-edit ml-2'])[1]") private WebElement NotificationSendBtn;
 
+	// Transactions
+	
+	@FindBy(xpath ="//span[.='Transactions']") private WebElement TransactionsLnk;
+	@FindBy(xpath ="//h4[.='All Transactions']") private WebElement TransactionsTextLnk;
+	@FindBy(xpath ="//button[.='Export to Excel']") private WebElement ExportToExcelBtn;
+	@FindBy(xpath ="//label[.='Enter a date range']") private WebElement TransactionsDateRangeEdt;
+	@FindBy(xpath ="//span[.='Select TXN type']") private WebElement TransactionsSelectTypeDrpDwn;
+	@FindBy(xpath ="//label[.='Mobile number']") private WebElement TransactionsMobileNumberEdt;
+	@FindBy(xpath ="//label[.='Transaction ID']") private WebElement TransactionsIdEdt;
+	@FindBy(xpath ="//button[@class='btn btn-filters ms-auto']") private WebElement TransactionsSearchBtn;
+	@FindBy(xpath ="//button[@class='btn btn-filters ms-auto bg-gold']") private WebElement TransactionsRefreshBtn;
+	@FindBy(xpath ="//input[@class='mdc-checkbox__native-control']") private WebElement TransactionsShowAllBoxLnk;
 
+	// Trading
+	
+	@FindBy(xpath ="//span[.='Trading']") private WebElement TradingLnk;
+	@FindBy(xpath ="//h4[.='Trading Bids']") private WebElement TradingBidsTextLnk;
+	@FindBy(xpath ="//button[.='Export to Excel']") private WebElement TradingExportToExcelBtn;
+	@FindBy(xpath ="//input[@placeholder='Search...']") private WebElement TradingSearchEdt;
+
+	// Events
+	
+	@FindBy(xpath ="//span[.='Events']") private WebElement EventsLnk;
+	@FindBy(xpath ="//h4[.='Event Requests']") private WebElement EventsRequestTextLnk;
+	@FindBy(xpath ="//input[@placeholder='Search...']") private WebElement EventsSearchEdt;
+	@FindBy(xpath ="(//button[.='Info'])[1]") private WebElement EventsInfoBtn;
+	@FindBy(xpath ="(//mat-select[@aria-haspopup='listbox'])[1]") private WebElement EventsStatusUpdateDrpDwn;
+
+	// Ledger Reports
+	
+	@FindBy(xpath ="//span[.='Ledger reports']") private WebElement LedgerReportsLnk;
+
+	// Transactions Report
+	
+	@FindBy(xpath ="//a[.='Transaction report']") private WebElement TransactionsReportLnk;
+	@FindBy(xpath ="//h4[.='Ledger Report of transaction']") private WebElement TransactionReportTextLnk;
+	@FindBy(xpath ="//label[.='Enter a date range']") private WebElement TransactionsReportDateRangeEdt;
+	@FindBy(xpath ="//label[.='Mobile number']") private WebElement TransactionsReportMobileNumberEdt;
+	@FindBy(xpath ="//button[.=' Get Report']") private WebElement TransactionsReportGetReportBtn;
+	
+	// Settings
+	
+	@FindBy(xpath ="//span[.='Settings']") private WebElement SettingsLnk;
+	
+	// Settings - Otp List
+	
+	@FindBy(xpath ="//a[.='OTP List']") private WebElement OtpListLnk;
+	@FindBy(xpath ="//input[@placeholder='Search...']") private WebElement OtpListSearchEdt;
+	
+	// Settings - App Management
+	
+	@FindBy(xpath ="//a[.='App management']") private WebElement AppManagementLnk;
+	@FindBy(xpath ="//h4[.='App status management']") private WebElement AppManagementTextLnk;
+	@FindBy(xpath ="(//div[@class='mdc-form-field'])[1]") private WebElement AppManagementBootstrapBtn;
+
+	// settings - Payment Management
+	
+	@FindBy(xpath ="//a[.='Payment management']") private WebElement PaymentManagementLnk;
+	@FindBy(xpath ="//h4[.='Payment method management List']") private WebElement AppPaymentManagementTextLnk;
+	@FindBy(xpath ="(//div[@class='mdc-form-field'])[1]") private WebElement PaymentManagementBootstrapBtn;
+
+	// Settings - Roles
+	
+	@FindBy(xpath ="//a[.='Roles']") private WebElement RolesLnk;
+	@FindBy(xpath ="//h4[.='Roles List']") private WebElement RolesListTextLnk;
+	@FindBy(xpath ="//input[@placeholder='Search...']") private WebElement RolesSearchEdt;
+	@FindBy(xpath ="//button[.='Add Role']") private WebElement RolesAddRoleBtn;
+	@FindBy(xpath ="(//button[.=' Edit '])[1]") private WebElement RolesEditBtn;
+	@FindBy(xpath ="(//button[@class='mr-2 btn-danger'])[1]") private WebElement RolesDeleteBtn;
+
+	// Settings - Fms Users
+	
+	@FindBy(xpath ="//a[.='FMS Users']") private WebElement FmsUsersLnk;
+	@FindBy(xpath ="//h4[.='FMS Users']") private WebElement FmsUsersTextLnk;
+	@FindBy(xpath ="//button[.='Add FMS User']") private WebElement FmsUsersAddBtn;
+	@FindBy(xpath ="//input[@placeholder='Search...']") private WebElement FmsUsersSearchEdt;
+	@FindBy(xpath ="//button[.=' Edit ']") private WebElement FmsUsersEditBtn;
+	@FindBy(xpath ="//button[@class='mr-2 btn-danger']") private WebElement FmsUsersDeleteBtn;
+
+	
 	/*
 	 *
 	
@@ -419,6 +509,43 @@ public class AllOperationsUiSprintTwo
 		Thread.sleep(2000);
 
 	
+	}
+	
+	public void Brands() throws InterruptedException
+	{
+		
+		Thread.sleep(2000);
+		boolean Brands = BrandsLnk.isDisplayed();
+		System.out.println("Brands is Displayed : "+Brands);
+		Thread.sleep(2000);
+		BrandsLnk.click();
+		Thread.sleep(2000);
+
+		boolean BrandsText = BrandsTextLnk.isDisplayed();
+		System.out.println("BrandsText is Displayed : "+BrandsText);
+		Thread.sleep(2000);
+
+		boolean BrandsAddBrandsButton = BrandsAddBrandsBtn.isDisplayed();
+		System.out.println("BrandsAddBrandsButton is Displayed : "+BrandsAddBrandsButton);
+		Thread.sleep(2000);
+
+		boolean BrandsSearchEdit = BrandsSearchEdt.isDisplayed();
+		System.out.println("BrandsSearchEdit is Displayed : "+BrandsSearchEdit);
+		Thread.sleep(2000);
+
+		boolean BrandsEditButton = BrandsEditBtn.isDisplayed();
+		System.out.println("BrandsEditButton is Displayed : "+BrandsEditButton);
+		Thread.sleep(2000);
+
+		boolean BrandsBootStrapButton = BrandsBootStrapBtn.isDisplayed();
+		System.out.println("BrandsBootStrapButton is Displayed : "+BrandsBootStrapButton);
+		Thread.sleep(2000);
+
+		boolean BrandsDeleteButton = BrandsDeleteBtn.isDisplayed();
+		System.out.println("BrandsDeleteButton is Displayed : "+BrandsDeleteButton);
+		Thread.sleep(2000);
+
+		
 	}
 	
 	public void EcommerceOrders() throws InterruptedException
@@ -788,4 +915,283 @@ public class AllOperationsUiSprintTwo
 
 
 	}
+	
+	public void Transactions() throws InterruptedException
+	{
+		
+		Thread.sleep(3000);
+		boolean Transactions = TransactionsLnk.isDisplayed();
+		System.out.println("Transactions is Displayed : "+Transactions);
+		Thread.sleep(2000);
+		TransactionsLnk.click();
+		Thread.sleep(2000);
+
+		boolean TransactionsText = TransactionsTextLnk.isDisplayed();
+		System.out.println("Transactions Text is Displayed : "+TransactionsText);
+		Thread.sleep(2000);
+
+		boolean ExportToExcelButton = ExportToExcelBtn.isDisplayed();
+		System.out.println("Export To Excel Button is Displayed : "+ExportToExcelButton);
+		Thread.sleep(2000);
+
+		boolean TransactionsDateRangeEdit = TransactionsDateRangeEdt.isDisplayed();
+		System.out.println("Transactions Date Range Edit is Displayed : "+TransactionsDateRangeEdit);
+		Thread.sleep(2000);
+
+		boolean TransactionsSelectTypeDropDown = TransactionsSelectTypeDrpDwn.isDisplayed();
+		System.out.println("Transactions Select Type Drop Down is Displayed : "+TransactionsSelectTypeDropDown);
+		Thread.sleep(2000);
+
+		boolean TransactionsMobileNumberEdit = TransactionsMobileNumberEdt.isDisplayed();
+		System.out.println("Transactions Mobile Number Edit is Displayed : "+TransactionsMobileNumberEdit);
+		Thread.sleep(2000);
+
+		boolean TransactionsIdEdit = TransactionsIdEdt.isDisplayed();
+		System.out.println("Transactions Id Edit is Displayed : "+TransactionsIdEdit);
+		Thread.sleep(2000);
+
+		boolean TransactionsSearchButton = TransactionsSearchBtn.isDisplayed();
+		System.out.println("Transactions Search Button is Displayed : "+TransactionsSearchButton);
+		Thread.sleep(2000);
+		
+		boolean TransactionsRefreshButton = TransactionsRefreshBtn.isDisplayed();
+		System.out.println("Transactions Refresh Button is Displayed : "+TransactionsRefreshButton);
+		Thread.sleep(2000);
+
+		boolean TransactionsShowAllBox = TransactionsShowAllBoxLnk.isDisplayed();
+		System.out.println("Transactions Show All Box is Displayed : "+TransactionsShowAllBox);
+		Thread.sleep(2000);
+
+
+	}
+	
+	public void Trading() throws InterruptedException
+	{
+		
+		Thread.sleep(3000);
+		boolean Trading = TradingLnk.isDisplayed();
+		System.out.println("Trading is Displayed : "+Trading);
+		Thread.sleep(2000);
+		TradingLnk.click();
+		Thread.sleep(2000);
+		
+		boolean TradingBidsText = TradingBidsTextLnk.isDisplayed();
+		System.out.println("Trading Bids Text is Displayed : "+TradingBidsText);
+		Thread.sleep(2000);
+
+		boolean TradingExportToExcelButton = TradingExportToExcelBtn.isDisplayed();
+		System.out.println("Trading Export To Excel Button is Displayed : "+TradingExportToExcelButton);
+		Thread.sleep(2000);
+
+		boolean TradingSearchEdit = TradingSearchEdt.isDisplayed();
+		System.out.println("Trading Search Edit is Displayed : "+TradingSearchEdit);
+		Thread.sleep(2000);
+ 
+	
+	}
+	
+	public void Events() throws InterruptedException
+	{
+		
+		Thread.sleep(3000);
+		boolean Events = EventsLnk.isDisplayed();
+		System.out.println("Events is Displayed : "+Events);
+		Thread.sleep(2000);
+		EventsLnk.click();
+		Thread.sleep(2000);
+		
+		boolean EventsRequestText = EventsRequestTextLnk.isDisplayed();
+		System.out.println("Events Request Text is Displayed : "+EventsRequestText);
+		Thread.sleep(2000);
+
+		boolean EventsSearchEdit = EventsSearchEdt.isDisplayed();
+		System.out.println("Events Search Edit is Displayed : "+EventsSearchEdit);
+		Thread.sleep(4000);
+
+		boolean EventsInfoButton = EventsInfoBtn.isDisplayed();
+		System.out.println("Events Info Button is Displayed : "+EventsInfoButton);
+		Thread.sleep(2000);
+
+		boolean EventsStatusUpdateDropDown = EventsStatusUpdateDrpDwn.isDisplayed();
+		System.out.println("Events Status Update DropDown is Displayed : "+EventsStatusUpdateDropDown);
+		Thread.sleep(2000);
+
+		
+	}
+	
+	public void LedgerReports() throws InterruptedException
+	{
+		
+		Thread.sleep(3000);
+		boolean LedgerReports = LedgerReportsLnk.isDisplayed();
+		System.out.println("Ledger Reports is Displayed : "+LedgerReports);
+		Thread.sleep(2000);
+		LedgerReportsLnk.click();
+
+		
+	}
+	
+	public void TransactionsReport() throws InterruptedException
+	{
+
+		Thread.sleep(2000);
+		boolean TransactionsReport = TransactionsReportLnk.isDisplayed();
+		System.out.println("Transactions Report is Displayed : "+TransactionsReport);
+		Thread.sleep(2000);
+		TransactionsReportLnk.click();
+
+		boolean TransactionReportText = TransactionReportTextLnk.isDisplayed();
+		System.out.println("Transaction Report Text is Displayed : "+TransactionReportText);
+		Thread.sleep(2000);
+
+		boolean TransactionReportDateRangeEdit = TransactionsReportDateRangeEdt.isDisplayed();
+		System.out.println("Transaction Report Date Range Edit is Displayed : "+TransactionReportDateRangeEdit);
+		Thread.sleep(2000);
+
+		boolean TransactionReportMobileNumberEdit = TransactionsReportMobileNumberEdt.isDisplayed();
+		System.out.println("Transaction Report Mobile Number Edit is Displayed : "+TransactionReportMobileNumberEdit);
+		Thread.sleep(2000);
+
+		boolean TransactionReportGetReportButton = TransactionsReportGetReportBtn.isDisplayed();
+		System.out.println("Transaction Report Get Report Button is Displayed : "+TransactionReportGetReportButton);
+		Thread.sleep(2000);
+
+
+	}
+	
+	public void Settings() throws InterruptedException
+	{
+		
+		Thread.sleep(2000);
+		boolean Settings = SettingsLnk.isDisplayed();
+		System.out.println("Settings is Displayed : "+Settings);
+		Thread.sleep(2000);
+		SettingsLnk.click();
+		Thread.sleep(2000);
+
+
+	}
+	
+	public void OtpList() throws InterruptedException
+	{
+		
+		Thread.sleep(3000);
+		boolean OtpList = OtpListLnk.isDisplayed();
+		System.out.println("Otp List is Displayed : "+OtpList);
+		Thread.sleep(2000);
+		OtpListLnk.click();
+		Thread.sleep(2000);
+		
+		boolean OtpListSearchEdit = OtpListSearchEdt.isDisplayed();
+		System.out.println("Otp List Search Edit is Displayed : "+OtpListSearchEdit);
+		Thread.sleep(2000);
+
+
+	}
+	
+	public void AppManagement() throws InterruptedException
+	{
+		
+		Thread.sleep(2000);
+		boolean AppManagement = AppManagementLnk.isDisplayed();
+		System.out.println("App Management is Displayed : "+AppManagement);
+		Thread.sleep(2000);
+		AppManagementLnk.click();
+		Thread.sleep(2000);
+
+		boolean AppManagementText = AppManagementTextLnk.isDisplayed();
+		System.out.println("App Management Text is Displayed : "+AppManagementText);
+		Thread.sleep(2000);
+
+		boolean AppManagementBootstrapButton = AppManagementBootstrapBtn.isDisplayed();
+		System.out.println("App Management Bootstrap Button is Displayed : "+AppManagementBootstrapButton);
+		Thread.sleep(2000);
+		
+
+	}
+	
+	public void PaymentManagement() throws InterruptedException
+	{
+		
+		Thread.sleep(3000);
+		boolean PaymentManagement = PaymentManagementLnk.isDisplayed();
+		System.out.println("Payment Management is Displayed : "+PaymentManagement);
+		Thread.sleep(2000);
+		PaymentManagementLnk.click();
+		Thread.sleep(2000);
+
+		boolean AppPaymentManagementText = AppPaymentManagementTextLnk.isDisplayed();
+		System.out.println("App Payment Management Text is Displayed : "+AppPaymentManagementText);
+		Thread.sleep(2000);
+
+		boolean PaymentManagementBootstrapButton = PaymentManagementBootstrapBtn.isDisplayed();
+		System.out.println("PaymentManagementBootstrapButton is Displayed : "+PaymentManagementBootstrapButton);
+		Thread.sleep(2000);
+
+	
+	}
+	
+	public void Roles() throws InterruptedException
+	{
+		Thread.sleep(3000);
+		boolean Roles = RolesLnk.isDisplayed();
+		System.out.println("Roles is Displayed : "+Roles);
+		Thread.sleep(2000);
+		RolesLnk.click();
+		Thread.sleep(2000);
+
+		boolean RolesListText = RolesListTextLnk.isDisplayed();
+		System.out.println("RolesListText is Displayed : "+RolesListText);
+		Thread.sleep(2000);
+
+		boolean RolesSearchEdit = RolesSearchEdt.isDisplayed();
+		System.out.println("RolesSearchEdit is Displayed : "+RolesSearchEdit);
+		Thread.sleep(2000);
+
+		boolean RolesAddRoleButton = RolesAddRoleBtn.isDisplayed();
+		System.out.println("RolesAddRoleButton is Displayed : "+RolesAddRoleButton);
+		Thread.sleep(2000);
+
+		boolean RolesEditButton = RolesEditBtn.isDisplayed();
+		System.out.println("RolesEditButton is Displayed : "+RolesEditButton);
+		Thread.sleep(2000);
+
+		boolean RolesDeleteButton = RolesDeleteBtn.isDisplayed();
+		System.out.println("RolesDeleteButton is Displayed : "+RolesDeleteButton);
+		Thread.sleep(2000);
+
+	}
+	
+	public void FmsUsers() throws InterruptedException
+    {
+		
+		Thread.sleep(2000);
+		boolean FmsUsers = FmsUsersLnk.isDisplayed();
+		System.out.println("FmsUsers is Displayed : "+FmsUsers);
+		Thread.sleep(2000);
+		FmsUsersLnk.click();
+		Thread.sleep(2000);
+
+		boolean FmsUsersText = FmsUsersTextLnk.isDisplayed();
+		System.out.println("FmsUsersText is Displayed : "+FmsUsersText);
+		Thread.sleep(2000);
+
+		boolean FmsUsersAddButton = FmsUsersAddBtn.isDisplayed();
+		System.out.println("FmsUsersAddButton is Displayed : "+FmsUsersAddButton);
+		Thread.sleep(2000);
+
+		boolean FmsUsersSearchEdit = FmsUsersSearchEdt.isDisplayed();
+		System.out.println("FmsUsersSearchEdit is Displayed : "+FmsUsersSearchEdit);
+		Thread.sleep(2000);
+
+		boolean FmsUsersEditButton = FmsUsersEditBtn.isDisplayed();
+		System.out.println("FmsUsersEditButton is Displayed : "+FmsUsersEditButton);
+		Thread.sleep(2000);
+
+		boolean FmsUsersDeleteButton = FmsUsersDeleteBtn.isDisplayed();
+		System.out.println("FmsUsersDeleteButton is Displayed : "+FmsUsersDeleteButton);
+		Thread.sleep(2000);
+
+
+    }
 }
