@@ -1,7 +1,6 @@
 package Sprint_Two;
 
 import org.testng.annotations.Test;
-
 import FMSBaseClass.BrowserLaunch;
 import SprintTwoUi.AllOperationsUiSprintTwo;
 
@@ -10,12 +9,10 @@ public class SprintTwoAllOperations extends BrowserLaunch {
 	AllOperationsUiSprintTwo AllOperations;
 	
 	@Test
-	public void AllOperationsUiTest() throws InterruptedException
+	public void AllOperationsUiTest() throws Exception
 	{
 		
 		AllOperations = new AllOperationsUiSprintTwo(driver);
-		
-		
 		AllOperations.SignInPage();
 		AllOperations.GoldPrices();	
 		AllOperations.Ecommerece();
@@ -34,6 +31,7 @@ public class SprintTwoAllOperations extends BrowserLaunch {
 		AllOperations.AdminCoupons();
 		AllOperations.GiftCards();
 		AllOperations.AllGiftCards();
+		AllOperations.Merchants();
 		AllOperations.Notifications();
 		AllOperations.Transactions();
 		AllOperations.Trading();
@@ -48,7 +46,6 @@ public class SprintTwoAllOperations extends BrowserLaunch {
 		
 		
 		driver.close();
-		
 		
 	}
 

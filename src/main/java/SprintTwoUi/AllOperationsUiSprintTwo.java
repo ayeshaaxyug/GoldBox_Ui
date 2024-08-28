@@ -83,7 +83,7 @@ public class AllOperationsUiSprintTwo
 	
 	@FindBy(xpath ="//a[.='Ecommerce Orders']") private WebElement EcommerceOrdersLnk;
 	@FindBy(xpath ="//h4[.='Ecommerce Orders']") private WebElement EcommerceOrdersTextLnk;
-	@FindBy(xpath ="//button[@class='btn btn- mr-2']") private WebElement OPCancelledOrderslnk;
+	@FindBy(xpath ="//button[@class='btn btn-added1 mr-2']") private WebElement OPCancelledOrderslnk;
 	@FindBy(xpath ="//button[@class='btn btn-added mr-2']") private WebElement OPPendingOrdersLnk;
 	@FindBy(xpath ="//button[@class='btn btn-added3']") private WebElement OPDeliveredOrdersLnk;
 	@FindBy(xpath ="//a[@class='btn btn-filter']") private WebElement OPFilterBtn;
@@ -117,7 +117,7 @@ public class AllOperationsUiSprintTwo
 	@FindBy(xpath ="//a[.='Splash Banners']") private WebElement SplashBannersLnk;
 	@FindBy(xpath ="//h4[.='Splash Banners']") private WebElement SplashBannersTextLnk;
 	@FindBy(xpath ="//button[.='Add Splash Banners']") private WebElement SplashBannersAddSplashBannersBtn;
-	@FindBy(xpath ="//input[@placeholder='Search...']") private WebElement SplashBannerssearchEdt;
+	@FindBy(xpath ="//input[@placeholder='Search...']") private WebElement SplashBannersSearchEdt;
 	@FindBy(xpath ="(//button[.='View'])[1]") private WebElement SplashBannerViewBtn;
 	@FindBy(xpath ="(//button[.=' Edit '])[1]") private WebElement SplashBannerEditBtn;
 	@FindBy(xpath ="(//div[@class='mdc-switch__track'])[1]") private WebElement SplashBannerBootstrapBtn;
@@ -164,12 +164,20 @@ public class AllOperationsUiSprintTwo
 	// All Gift Cards
 	
 	@FindBy(xpath ="//a[.='All Gift cards']") private WebElement AllGiftCardsLnk;
-	@FindBy(xpath ="//h4[.='All Gift Cards']") private WebElement AllGiftCardsTextLnk;
+	@FindBy(xpath ="//h4[.='All Giftcards']") private WebElement AllGiftCardsTextLnk;
 	@FindBy(xpath ="//input[@placeholder='Search...']") private WebElement AllGiftCardsSearchEdt;
 	@FindBy(xpath ="//button[.='Add Gift Card']") private WebElement AllGiftCardsAddGiftCardBtn;
 	@FindBy(xpath ="(//button[.='Buy Users'])[1]") private WebElement AllGiftCardsBuyUsersBtn;
 	@FindBy(xpath ="(//button[.='Gift Card Used Users'])[1]") private WebElement AllGiftCardsGiftCardUsedUsersBtn;
-
+	
+	// Merchants
+	
+	@FindBy(xpath ="//a[.='Merchants']") private WebElement MerchantsLnk;
+	@FindBy(xpath ="//h4[.='Merchants']") private WebElement MerchantsTextLnk;
+	@FindBy(xpath ="//button[.='Add Merchants']") private WebElement MerchantsAddMerchantsBtn;
+	@FindBy(xpath ="//input[@placeholder='Search...']") private WebElement MerchantsSearchEdt;
+	@FindBy(xpath ="(//button[.=' Edit '])[1]") private WebElement MerchantsEditBtn;
+	
 	// Notifications
 	
 	@FindBy(xpath ="//span[.='Notifications']") private WebElement NotificationsLnk;
@@ -276,35 +284,35 @@ public class AllOperationsUiSprintTwo
 	
 		boolean  = .isDisplayed();
 		System.out.println(" is Displayed : "+);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 
 		boolean  = .isDisplayed();
 		System.out.println(" is Displayed : "+);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 
 		boolean  = .isDisplayed();
 		System.out.println(" is Displayed : "+);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 
 		boolean  = .isDisplayed();
 		System.out.println(" is Displayed : "+);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 
 		boolean  = .isDisplayed();
 		System.out.println(" is Displayed : "+);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 
 		boolean  = .isDisplayed();
 		System.out.println(" is Displayed : "+);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 
 		boolean  = .isDisplayed();
 		System.out.println(" is Displayed : "+);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 
 		boolean  = .isDisplayed();
 		System.out.println(" is Displayed : "+);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 
 	 * 
 	 */
@@ -322,11 +330,11 @@ public class AllOperationsUiSprintTwo
 		Thread.sleep(3000);
 		boolean SignInLogo = SignInLogoLnk.isDisplayed();
 		System.out.println("SignIn Logo Displayed : "+SignInLogo);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		
 		boolean SinginToAcc = SinginToAccText.isDisplayed();
 		System.out.println("SignIn To Account Displayed : "+SinginToAcc);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 
 		boolean Email = EmailEdt.isDisplayed();
 		System.out.println("Email is Displayed : "+ Email);
@@ -351,28 +359,28 @@ public class AllOperationsUiSprintTwo
 	public void GoldPrices() throws InterruptedException
 	{
 		
-		Thread.sleep(3000);
+		Thread.sleep(6000);
 		boolean GoldPrices = GoldPricesLnk.isDisplayed();
 		System.out.println("GoldPrices is Displayed : "+GoldPrices);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		GoldPricesLnk.click();
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		
 		boolean GoldPricesList = GoldPricesListText.isDisplayed();
 		System.out.println("Gold Prices List is Displayed : "+GoldPricesList);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 
 		boolean FilterButton = FilterBtn.isDisplayed();
 		System.out.println("Filter Button is Displayed : "+FilterButton);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 
 		boolean GPLSearchEdit = GPLSearchEdt.isDisplayed();
 		System.out.println("GPLSearch Edit is Displayed : "+GPLSearchEdit);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 
 		boolean GPLAddGoldPricesButton = GPLAddGoldPricesBtn.isDisplayed();
 		System.out.println("GPLAdd GoldPrices Button is Displayed : "+GPLAddGoldPricesButton);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 
 	}
 		
@@ -382,9 +390,9 @@ public class AllOperationsUiSprintTwo
 		Thread.sleep(3000);
 		boolean Ecommerce = EcommerceLnk.isDisplayed();
 		System.out.println("Ecommerce is Displayed : "+Ecommerce);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		EcommerceLnk.click();
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 
 	}
 
@@ -394,33 +402,33 @@ public class AllOperationsUiSprintTwo
 		Thread.sleep(3000);
 		boolean Category = CategoryLnk.isDisplayed();
 		System.out.println("Category is Displayed : "+Category);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		CategoryLnk.click();
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 
 		boolean CategoryListText = CategoryListTextLnk.isDisplayed();
 		System.out.println("Category List Text is Displayed : "+CategoryListText);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 
 		boolean CategorySeachEdit = CategorySeachEdt.isDisplayed();
 		System.out.println("Category Seach Edit is Displayed : "+CategorySeachEdit);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 
 		boolean CategoryAddCategoryButton = CategoryAddCategoryBtn.isDisplayed();
 		System.out.println("Category Add Category Button is Displayed : "+CategoryAddCategoryButton);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 
 		boolean CategoryEditButton = CategoryEditBtn.isDisplayed();
 		System.out.println("Category Edit Button is Displayed : "+CategoryEditButton);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 
 		boolean CategoryBootStrapButton = CategoryBootStrapBtn.isDisplayed();
 		System.out.println("Category BootStrap Button is Displayed : "+CategoryBootStrapButton);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 
 		boolean CategoryDeleteButton = CategoryDeleteBtn.isDisplayed();
 		System.out.println("Category Delete Button is Displayed : "+CategoryDeleteButton);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 
 		
 	}
@@ -431,33 +439,33 @@ public class AllOperationsUiSprintTwo
 		Thread.sleep(3000);
 		boolean Subcategory = SubcategoryLnk.isDisplayed();
 		System.out.println("Subcategory is Displayed : "+Subcategory);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		SubcategoryLnk.click();
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		
 		boolean SubcategoryListText = SubcategoryListTextLnk.isDisplayed();
 		System.out.println("Subcategory List Text is Displayed : "+SubcategoryListText);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 
 		boolean SubcategorySearchEdit = SubcategorySearchEdt.isDisplayed();
 		System.out.println("Subcategory Search Edit is Displayed : "+SubcategorySearchEdit);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 
 		boolean SubcategoryAddSubcategoryButton = SubcategoryAddSubcategoryBtn.isDisplayed();
 		System.out.println("Subcategory Add Subcategory Button is Displayed : "+SubcategoryAddSubcategoryButton);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 
 		boolean SubcategoryEditButton = SubcategoryEditBtn.isDisplayed();
 		System.out.println("Subcategory Edit Button is Displayed : "+SubcategoryEditButton);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 
 		boolean SubcategoryBootStrapButton = SubcategoryBootStrapBtn.isDisplayed();
 		System.out.println("Subcategory BootStrap Button is Displayed : "+SubcategoryBootStrapButton);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 
 		boolean SubcategoryDeleteButton = SubcategoryDeleteBtn.isDisplayed();
 		System.out.println("Subcategory Delete Button is Displayed : "+SubcategoryDeleteButton);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 
 
 	}
@@ -468,45 +476,45 @@ public class AllOperationsUiSprintTwo
 		Thread.sleep(3000);
 		boolean Products = ProductsLnk.isDisplayed();
 		System.out.println("Products is Displayed : "+Products);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		ProductsLnk.click();
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 
 		boolean ProductsListText = ProductsListTextLnk.isDisplayed();
 		System.out.println("Products List Text is Displayed : "+ProductsListText);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 
 		boolean ProductsAddProductsButton = ProductsAddProductsBtn.isDisplayed();
 		System.out.println("Products Add Products Button is Displayed : "+ProductsAddProductsButton);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 
 		boolean ProductsSearchEdit = ProductsSearchEdt.isDisplayed();
 		System.out.println("Products Search Edit is Displayed : "+ProductsSearchEdit);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 
 		boolean ProductsWeightInfoButton = ProductsWeightInfoBtn.isDisplayed();
 		System.out.println("Products Weight Info Button is Displayed : "+ProductsWeightInfoButton);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 
 		boolean ProductsStonesViewButton = ProductsStonesViewBtn.isDisplayed();
 		System.out.println("Products Stones View Button is Displayed : "+ProductsStonesViewButton);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 
 		boolean ProductsDesriptionViewButton = ProductsDesriptionViewBtn.isDisplayed();
 		System.out.println("Products Desription View Button is Displayed : "+ProductsDesriptionViewButton);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 
 		boolean ProductsEditButton = ProductsEditBtn.isDisplayed();
 		System.out.println("Products Edit Button is Displayed : "+ProductsEditButton);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 
 		boolean ProductsBootstrapButton = ProductsBootstrapBtn.isDisplayed();
 		System.out.println("Products Bootstrap Button is Displayed : "+ProductsBootstrapButton);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 
 		boolean ProductsDeleteButton = ProductsDeleteBtn.isDisplayed();
 		System.out.println("Products Delete Button is Displayed : "+ProductsDeleteButton);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 
 	
 	}
@@ -514,36 +522,36 @@ public class AllOperationsUiSprintTwo
 	public void Brands() throws InterruptedException
 	{
 		
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		boolean Brands = BrandsLnk.isDisplayed();
 		System.out.println("Brands is Displayed : "+Brands);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		BrandsLnk.click();
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 
 		boolean BrandsText = BrandsTextLnk.isDisplayed();
-		System.out.println("BrandsText is Displayed : "+BrandsText);
-		Thread.sleep(2000);
+		System.out.println("Brands Text is Displayed : "+BrandsText);
+		Thread.sleep(3000);
 
 		boolean BrandsAddBrandsButton = BrandsAddBrandsBtn.isDisplayed();
-		System.out.println("BrandsAddBrandsButton is Displayed : "+BrandsAddBrandsButton);
-		Thread.sleep(2000);
+		System.out.println("Brands Add Brands Button is Displayed : "+BrandsAddBrandsButton);
+		Thread.sleep(3000);
 
 		boolean BrandsSearchEdit = BrandsSearchEdt.isDisplayed();
-		System.out.println("BrandsSearchEdit is Displayed : "+BrandsSearchEdit);
-		Thread.sleep(2000);
+		System.out.println("Brands Search Edit is Displayed : "+BrandsSearchEdit);
+		Thread.sleep(3000);
 
 		boolean BrandsEditButton = BrandsEditBtn.isDisplayed();
-		System.out.println("BrandsEditButton is Displayed : "+BrandsEditButton);
-		Thread.sleep(2000);
+		System.out.println("Brands Edit Button is Displayed : "+BrandsEditButton);
+		Thread.sleep(3000);
 
 		boolean BrandsBootStrapButton = BrandsBootStrapBtn.isDisplayed();
-		System.out.println("BrandsBootStrapButton is Displayed : "+BrandsBootStrapButton);
-		Thread.sleep(2000);
+		System.out.println("Brands BootStrap Button is Displayed : "+BrandsBootStrapButton);
+		Thread.sleep(3000);
 
 		boolean BrandsDeleteButton = BrandsDeleteBtn.isDisplayed();
-		System.out.println("BrandsDeleteButton is Displayed : "+BrandsDeleteButton);
-		Thread.sleep(2000);
+		System.out.println("Brands Delete Button is Displayed : "+BrandsDeleteButton);
+		Thread.sleep(3000);
 
 		
 	}
@@ -553,45 +561,45 @@ public class AllOperationsUiSprintTwo
 		
 		boolean EcommerceOrders = EcommerceOrdersLnk.isDisplayed();
 		System.out.println("Ecommerce Orders is Displayed : "+EcommerceOrders);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		EcommerceOrdersLnk.click();
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 
 		boolean EcommerceOrdersText = EcommerceOrdersTextLnk.isDisplayed();
-		System.out.println("Ecommerce OrdersText is Displayed : "+EcommerceOrdersText);
-		Thread.sleep(2000);
+		System.out.println("Ecommerce Orders Text is Displayed : "+EcommerceOrdersText);
+		Thread.sleep(4000);
 
 		boolean OPCancelledOrders = OPCancelledOrderslnk.isDisplayed();
 		System.out.println("OPCancelled Orders is Displayed : "+OPCancelledOrders);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 
 		boolean OPPendingOrders = OPPendingOrdersLnk.isDisplayed();
 		System.out.println("OPPending Orders is Displayed : "+OPPendingOrders);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 
 		boolean OPDeliveredOrders = OPDeliveredOrdersLnk.isDisplayed();
 		System.out.println("OPDelivered Orders is Displayed : "+OPDeliveredOrders);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 
 		boolean OPFilterButton = OPFilterBtn.isDisplayed();
 		System.out.println("OPFilter Button is Displayed : "+OPFilterButton);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 
 		boolean OPSearchEdit = OPSearchEdt.isDisplayed();
 		System.out.println("OPSearch Edit is Displayed : "+OPSearchEdit);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 
 		boolean OPExportToExcelButton = OPExportToExcelBtn.isDisplayed();
 		System.out.println("OPExport To Excel Button is Displayed : "+OPExportToExcelButton);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 
 		boolean OPProductsViewButton = OPProductsViewBtn.isDisplayed();
 		System.out.println("OPProducts View Button is Displayed : "+OPProductsViewButton);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 
 		boolean OPActionStatusButton = OPActionStatusBtn.isDisplayed();
 		System.out.println("OPAction Status Button is Displayed : "+OPActionStatusButton);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 
 
 	}
@@ -602,17 +610,17 @@ public class AllOperationsUiSprintTwo
 		Thread.sleep(3000);
 		boolean ECommerceTransactions = ECommerceTransactionsLnk.isDisplayed();
 		System.out.println("ECommerce Transactions is Displayed : "+ECommerceTransactions);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		ECommerceTransactionsLnk.click();
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 
 		boolean EcommerceTransactionsText = EcommerceTransactionsTextLnk.isDisplayed();
 		System.out.println("Ecommerce Transactions Text is Displayed : "+EcommerceTransactionsText);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 
 		boolean ETSearchEdit = ETSearchEdt.isDisplayed();
 		System.out.println("ETSearch Edit is Displayed : "+ETSearchEdit);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 
 	
 	}
@@ -623,7 +631,7 @@ public class AllOperationsUiSprintTwo
 		Thread.sleep(3000);
 		boolean Banners = BannersLnk.isDisplayed();
 		System.out.println("Banners is Displayed : "+Banners);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		BannersLnk.click();
 		Thread.sleep(3000);
 
@@ -636,33 +644,33 @@ public class AllOperationsUiSprintTwo
 		Thread.sleep(3000);
 		boolean MainBanners = MainBannersLnk.isDisplayed();
 		System.out.println("Main Banners is Displayed : "+MainBanners);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		MainBannersLnk.click();
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		
 		boolean MainBannersText = MainBannersTextLnk.isDisplayed();
 		System.out.println("Main Banners Text is Displayed : "+MainBannersText);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 
 		boolean MainBannersAddMainBannersButton = MainBannersAddManiBannersBtn.isDisplayed();
 		System.out.println("Main Banners Add Main Banners Button is Displayed : "+MainBannersAddMainBannersButton);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		
 		boolean MainBannersSearchEdit = MainBannersSearchEdt.isDisplayed();
 		System.out.println("MainBanners Search Edit is Displayed : "+MainBannersSearchEdit);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		
 		boolean MainBannerViewButton = MainBannerViewBtn.isDisplayed();
 		System.out.println("Main Banner View Button is Displayed : "+MainBannerViewButton);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 
 		boolean MainBannerEditButton = MainBannerEditBtn.isDisplayed();
 		System.out.println("Main Banner Edit Button is Displayed : "+MainBannerEditButton);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 
 		boolean MainBannerBootStrapButton = MainBannerBootStrapBtn.isDisplayed();
 		System.out.println("Main Banner BootStrap Button is Displayed : "+MainBannerBootStrapButton);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 
 		
 	}
@@ -672,34 +680,34 @@ public class AllOperationsUiSprintTwo
 		
 		Thread.sleep(3000);
 		boolean SplashBanners = SplashBannersLnk.isDisplayed();
-		System.out.println("SplashBanners is Displayed : "+SplashBanners);
-		Thread.sleep(2000);
+		System.out.println("Splash Banners is Displayed : "+SplashBanners);
+		Thread.sleep(3000);
 		SplashBannersLnk.click();
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 
 		boolean SplashBannersText = SplashBannersTextLnk.isDisplayed();
-		System.out.println("SplashBannersText is Displayed : "+SplashBannersText);
-		Thread.sleep(2000);
+		System.out.println("Splash Banners Text is Displayed : "+SplashBannersText);
+		Thread.sleep(3000);
 
 		boolean SplashBannersAddSplashBannersButton = SplashBannersAddSplashBannersBtn.isDisplayed();
-		System.out.println("SplashBannersAddSplashBannersButton is Displayed : "+SplashBannersAddSplashBannersButton);
-		Thread.sleep(2000);
+		System.out.println("Splash Banners Add Splash Banners Button is Displayed : "+SplashBannersAddSplashBannersButton);
+		Thread.sleep(3000);
 
-		boolean SplashBannerssearchEdit = SplashBannerssearchEdt.isDisplayed();
-		System.out.println("SplashBannerssearchEdit is Displayed : "+SplashBannerssearchEdit);
-		Thread.sleep(2000);
+		boolean SplashBannersSearchEdit = SplashBannersSearchEdt.isDisplayed();
+		System.out.println("Splash Banners Search Edit is Displayed : "+SplashBannersSearchEdit);
+		Thread.sleep(3000);
 
 		boolean SplashBannerViewButton = SplashBannerViewBtn.isDisplayed();
-		System.out.println("SplashBannerViewButton is Displayed : "+SplashBannerViewButton);
-		Thread.sleep(2000);
+		System.out.println("Splash Banner View Button is Displayed : "+SplashBannerViewButton);
+		Thread.sleep(3000);
 
 		boolean SplashBannerEditButton = SplashBannerEditBtn.isDisplayed();
-		System.out.println("SplashBannerEditButton is Displayed : "+SplashBannerEditButton);
-		Thread.sleep(2000);
+		System.out.println("Splash Banner Edit Button is Displayed : "+SplashBannerEditButton);
+		Thread.sleep(3000);
 
 		boolean SplashBannerBootstrapButton = SplashBannerBootstrapBtn.isDisplayed();
-		System.out.println("SplashBannerBootstrapButton is Displayed : "+SplashBannerBootstrapButton);
-		Thread.sleep(2000);
+		System.out.println("Splash Banner Bootstrap Button is Displayed : "+SplashBannerBootstrapButton);
+		Thread.sleep(3000);
 		
 			
 	}
@@ -709,33 +717,33 @@ public class AllOperationsUiSprintTwo
 		Thread.sleep(3000);
 		boolean EcomBanners = EcomBannersLnk.isDisplayed();
 		System.out.println("Ecom Banners is Displayed : "+EcomBanners);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		EcomBannersLnk.click();
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 
 		boolean EcomBannersText = EcomBannersTextLnk.isDisplayed();
 		System.out.println("Ecom Banners Text is Displayed : "+EcomBannersText);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 
 		boolean EcomBannersAddEcomBannersButton = EcomBannersAddEcomBannersBtn.isDisplayed();
 		System.out.println("Ecom Banners Add Ecom Banners Button is Displayed : "+EcomBannersAddEcomBannersButton);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 
 		boolean EcomBannersSearchEdit = EcomBannersSearchEdt.isDisplayed();
 		System.out.println("Ecom Banners Search Edit is Displayed : "+EcomBannersSearchEdit);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 
 		boolean EComBannersViewButton = EComBannersViewBtn.isDisplayed();
-		System.out.println("EComBannersViewButton is Displayed : "+EComBannersViewButton);
-		Thread.sleep(2000);
+		System.out.println("ECom Banners View Button is Displayed : "+EComBannersViewButton);
+		Thread.sleep(3000);
 
 		boolean EcomBannersEditButton = EcomBannersEditBtn.isDisplayed();
-		System.out.println("EcomBannersEditButton is Displayed : "+EcomBannersEditButton);
-		Thread.sleep(2000);
+		System.out.println("Ecom Banners Edit Button is Displayed : "+EcomBannersEditButton);
+		Thread.sleep(3000);
 
 		boolean EcomBannersBootstrapButton = EcomBannersBootstrapBtn.isDisplayed();
-		System.out.println("EcomBannersBootstrapButton is Displayed : "+EcomBannersBootstrapButton);
-		Thread.sleep(2000);
+		System.out.println("Ecom Banners Bootstrap Button is Displayed : "+EcomBannersBootstrapButton);
+		Thread.sleep(3000);
 
 
 	}
@@ -746,9 +754,9 @@ public class AllOperationsUiSprintTwo
 		Thread.sleep(3000);
 		boolean Coupons = CouponsLnk.isDisplayed();
 		System.out.println("Coupons is Displayed : "+Coupons);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		CouponsLnk.click();
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 
 	}
 	
@@ -758,73 +766,73 @@ public class AllOperationsUiSprintTwo
 		Thread.sleep(3000);
 		boolean CouponList = CouponListLnk.isDisplayed();
 		System.out.println("CouponList is Displayed : "+CouponList);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		CouponListLnk.click();
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		
 		boolean CouponListText = CouponListTextLnk.isDisplayed();
 		System.out.println("Coupon List Text is Displayed : "+CouponListText);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 
 		boolean CouponListAddCouponButton = CouponListAddCouponBtn.isDisplayed();
 		System.out.println("Coupon List Add Coupon Button is Displayed : "+CouponListAddCouponButton);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 
 		boolean CouponListSearchEdit = CouponListSearchEdt.isDisplayed();
 		System.out.println("Coupon List Search Edit is Displayed : "+CouponListSearchEdit);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 
 		boolean CouponListViewButton = CouponListViewBtn.isDisplayed();
 		System.out.println("Coupon List View Button is Displayed : "+CouponListViewButton);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 
 		boolean CouponListUsedUsersButton = CouponListUsedUsersBtn.isDisplayed();
 		System.out.println("Coupon List Used Users Button is Displayed : "+CouponListUsedUsersButton);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 
 		boolean CouponListEditButton = CouponListEditBtn.isDisplayed();
 		System.out.println("Coupon List Edit Button is Displayed : "+CouponListEditButton);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 
 		boolean CouponListBootStrapButton = CouponListBootStrapBtn.isDisplayed();
 		System.out.println("Coupon List BootStrap Button is Displayed : "+CouponListBootStrapBtn);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 
 	}
 	
 	public void AdminCoupons() throws InterruptedException
 	{
 		
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		boolean AdminCoupons = AdminCouponsLnk.isDisplayed();
 		System.out.println("Admin Coupons is Displayed : "+AdminCoupons);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		AdminCouponsLnk.click();
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 
 		boolean AdminCouponsText = AdminCouponsTextLnk.isDisplayed();
 		System.out.println("Admin Coupons Text is Displayed : "+AdminCouponsText);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 
 		boolean AdminCouponAddAdminCouponButton = AdminCouponAddAdminCouponBtn.isDisplayed();
 		System.out.println("Admin Coupon Add Admin Coupon Button is Displayed : "+AdminCouponAddAdminCouponButton);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 
 		boolean AdminCouponSearchEdit = AdminCouponSearchEdt.isDisplayed();
 		System.out.println("Admin Coupon Search Edit is Displayed : "+AdminCouponSearchEdit);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 
 		boolean AdminCouponViewButton = AdminCouponViewBtn.isDisplayed();
 		System.out.println("Admin Coupon View Button is Displayed : "+AdminCouponViewButton);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 
 		boolean AdminCouponEditButton = AdminCouponEditBtn.isDisplayed();
 		System.out.println("Admin Coupon Edit Button is Displayed : "+AdminCouponEditButton);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 
 		boolean AdminCouponBootstrapButton = AdminCouponBootstrapBtn.isDisplayed();
 		System.out.println("Admin Coupon Bootstrap Button is Displayed : "+AdminCouponBootstrapButton);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 
 		
 	}
@@ -835,9 +843,9 @@ public class AllOperationsUiSprintTwo
 		Thread.sleep(3000);
 		boolean GiftCards = GiftCardsLnk.isDisplayed();
 		System.out.println("GiftCards is Displayed : "+GiftCards);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		GiftCardsLnk.click();
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		
 		
 	}
@@ -845,34 +853,63 @@ public class AllOperationsUiSprintTwo
 	public void AllGiftCards() throws InterruptedException
 	{
 		
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		boolean AllGiftCards = AllGiftCardsLnk.isDisplayed();
 		System.out.println("All Gift Cards is Displayed : "+AllGiftCards);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		AllGiftCardsLnk.click();
-		Thread.sleep(2000);
+		Thread.sleep(4000);
 
 		boolean AllGiftCardsText = AllGiftCardsTextLnk.isDisplayed();
 		System.out.println("All Gift Cards Text is Displayed : "+AllGiftCardsText);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 
 		boolean AllGiftCardsSearchEdit = AllGiftCardsSearchEdt.isDisplayed();
 		System.out.println("All Gift Cards Search Edit is Displayed : "+AllGiftCardsSearchEdit);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 
 		boolean AllGiftCardsAddGiftCardButton = AllGiftCardsAddGiftCardBtn.isDisplayed();
 		System.out.println("All Gift Cards Add Gift Card Button is Displayed : "+AllGiftCardsAddGiftCardButton);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 
 		boolean AllGiftCardsBuyUsersButton = AllGiftCardsBuyUsersBtn.isDisplayed();
 		System.out.println("All Gift Cards Buy Users Button is Displayed : "+AllGiftCardsBuyUsersButton);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 
 		boolean AllGiftCardsGiftCardUsedUsersButton = AllGiftCardsGiftCardUsedUsersBtn.isDisplayed();
 		System.out.println("All Gift Cards Gift Card Used Users Button is Displayed : "+AllGiftCardsGiftCardUsedUsersButton);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 
 
+	}
+	
+	public void Merchants() throws InterruptedException
+	{
+	
+		Thread.sleep(3000);
+		boolean Merchants = MerchantsLnk.isDisplayed();
+		System.out.println("Merchants is Displayed : "+Merchants);
+		Thread.sleep(3000);
+		MerchantsLnk.click();
+		Thread.sleep(3000);
+
+		boolean MerchantsText = MerchantsTextLnk.isDisplayed();
+		System.out.println("Merchants Text is Displayed : "+MerchantsText);
+		Thread.sleep(3000);
+
+		boolean MerchantsAddMerchantsButton = MerchantsAddMerchantsBtn.isDisplayed();
+		System.out.println("Merchants Add Merchants Button is Displayed : "+MerchantsAddMerchantsButton);
+		Thread.sleep(3000);
+
+		boolean MerchantsSearchEdit = MerchantsSearchEdt.isDisplayed();
+		System.out.println("Merchants Search Edit is Displayed : "+MerchantsSearchEdit);
+		Thread.sleep(3000);
+
+		boolean MerchantsEditButton = MerchantsEditBtn.isDisplayed();
+		System.out.println("Merchants Edit Button is Displayed : "+MerchantsEditButton);
+		Thread.sleep(3000);
+
+	
 	}
 	
 	public void Notifications() throws InterruptedException
@@ -881,86 +918,90 @@ public class AllOperationsUiSprintTwo
 		Thread.sleep(3000);
 		boolean Notifications = NotificationsLnk.isDisplayed();
 		System.out.println("Notifications is Displayed : "+Notifications);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		NotificationsLnk.click();
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 
 		boolean NotificationList = NotificationListLnk.isDisplayed();
 		System.out.println("Notification List is Displayed : "+NotificationList);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 
 		boolean NotificationAddNotificationButton = NotificationAddNotificationBtn.isDisplayed();
 		System.out.println("Notification Add Notification Button is Displayed : "+NotificationAddNotificationButton);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 
 		boolean NotificationSeacrhEdit = NotificationSeacrhEdt.isDisplayed();
 		System.out.println("Notification Seacrh Edit is Displayed : "+NotificationSeacrhEdit);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 
 		boolean NotificationViewButton = NotificationViewBtn.isDisplayed();
 		System.out.println("Notification View Button is Displayed : "+NotificationViewButton);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 
 		boolean NotificationEditButton = NotificationEditBtn.isDisplayed();
 		System.out.println("Notification Edit Button is Displayed : "+NotificationEditButton);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 
 		boolean NotificationDeleteButton = NotificationDeleteBtn.isDisplayed();
 		System.out.println("Notification Delete Button is Displayed : "+NotificationDeleteButton);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 
 		boolean NotificationSendButton = NotificationSendBtn.isDisplayed();
 		System.out.println("Notification Send Button is Displayed : "+NotificationSendButton);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 
 
 	}
 	
-	public void Transactions() throws InterruptedException
+	public void Transactions() throws Exception
 	{
 		
 		Thread.sleep(3000);
 		boolean Transactions = TransactionsLnk.isDisplayed();
 		System.out.println("Transactions is Displayed : "+Transactions);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		TransactionsLnk.click();
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 
 		boolean TransactionsText = TransactionsTextLnk.isDisplayed();
 		System.out.println("Transactions Text is Displayed : "+TransactionsText);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 
 		boolean ExportToExcelButton = ExportToExcelBtn.isDisplayed();
 		System.out.println("Export To Excel Button is Displayed : "+ExportToExcelButton);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 
 		boolean TransactionsDateRangeEdit = TransactionsDateRangeEdt.isDisplayed();
 		System.out.println("Transactions Date Range Edit is Displayed : "+TransactionsDateRangeEdit);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 
 		boolean TransactionsSelectTypeDropDown = TransactionsSelectTypeDrpDwn.isDisplayed();
 		System.out.println("Transactions Select Type Drop Down is Displayed : "+TransactionsSelectTypeDropDown);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 
 		boolean TransactionsMobileNumberEdit = TransactionsMobileNumberEdt.isDisplayed();
 		System.out.println("Transactions Mobile Number Edit is Displayed : "+TransactionsMobileNumberEdit);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 
 		boolean TransactionsIdEdit = TransactionsIdEdt.isDisplayed();
 		System.out.println("Transactions Id Edit is Displayed : "+TransactionsIdEdit);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 
 		boolean TransactionsSearchButton = TransactionsSearchBtn.isDisplayed();
 		System.out.println("Transactions Search Button is Displayed : "+TransactionsSearchButton);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		
 		boolean TransactionsRefreshButton = TransactionsRefreshBtn.isDisplayed();
 		System.out.println("Transactions Refresh Button is Displayed : "+TransactionsRefreshButton);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
+		
+	    wUtility = new WebDriverUtility();
+		wUtility.scrollPageDown(4);
+
 
 		boolean TransactionsShowAllBox = TransactionsShowAllBoxLnk.isDisplayed();
 		System.out.println("Transactions Show All Box is Displayed : "+TransactionsShowAllBox);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 
 
 	}
@@ -971,21 +1012,21 @@ public class AllOperationsUiSprintTwo
 		Thread.sleep(3000);
 		boolean Trading = TradingLnk.isDisplayed();
 		System.out.println("Trading is Displayed : "+Trading);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		TradingLnk.click();
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		
 		boolean TradingBidsText = TradingBidsTextLnk.isDisplayed();
 		System.out.println("Trading Bids Text is Displayed : "+TradingBidsText);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 
 		boolean TradingExportToExcelButton = TradingExportToExcelBtn.isDisplayed();
 		System.out.println("Trading Export To Excel Button is Displayed : "+TradingExportToExcelButton);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 
 		boolean TradingSearchEdit = TradingSearchEdt.isDisplayed();
 		System.out.println("Trading Search Edit is Displayed : "+TradingSearchEdit);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
  
 	
 	}
@@ -996,13 +1037,13 @@ public class AllOperationsUiSprintTwo
 		Thread.sleep(3000);
 		boolean Events = EventsLnk.isDisplayed();
 		System.out.println("Events is Displayed : "+Events);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		EventsLnk.click();
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		
 		boolean EventsRequestText = EventsRequestTextLnk.isDisplayed();
 		System.out.println("Events Request Text is Displayed : "+EventsRequestText);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 
 		boolean EventsSearchEdit = EventsSearchEdt.isDisplayed();
 		System.out.println("Events Search Edit is Displayed : "+EventsSearchEdit);
@@ -1010,11 +1051,11 @@ public class AllOperationsUiSprintTwo
 
 		boolean EventsInfoButton = EventsInfoBtn.isDisplayed();
 		System.out.println("Events Info Button is Displayed : "+EventsInfoButton);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 
 		boolean EventsStatusUpdateDropDown = EventsStatusUpdateDrpDwn.isDisplayed();
 		System.out.println("Events Status Update DropDown is Displayed : "+EventsStatusUpdateDropDown);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 
 		
 	}
@@ -1025,7 +1066,7 @@ public class AllOperationsUiSprintTwo
 		Thread.sleep(3000);
 		boolean LedgerReports = LedgerReportsLnk.isDisplayed();
 		System.out.println("Ledger Reports is Displayed : "+LedgerReports);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		LedgerReportsLnk.click();
 
 		
@@ -1034,27 +1075,27 @@ public class AllOperationsUiSprintTwo
 	public void TransactionsReport() throws InterruptedException
 	{
 
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		boolean TransactionsReport = TransactionsReportLnk.isDisplayed();
 		System.out.println("Transactions Report is Displayed : "+TransactionsReport);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		TransactionsReportLnk.click();
 
 		boolean TransactionReportText = TransactionReportTextLnk.isDisplayed();
 		System.out.println("Transaction Report Text is Displayed : "+TransactionReportText);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 
 		boolean TransactionReportDateRangeEdit = TransactionsReportDateRangeEdt.isDisplayed();
 		System.out.println("Transaction Report Date Range Edit is Displayed : "+TransactionReportDateRangeEdit);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 
 		boolean TransactionReportMobileNumberEdit = TransactionsReportMobileNumberEdt.isDisplayed();
 		System.out.println("Transaction Report Mobile Number Edit is Displayed : "+TransactionReportMobileNumberEdit);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 
 		boolean TransactionReportGetReportButton = TransactionsReportGetReportBtn.isDisplayed();
 		System.out.println("Transaction Report Get Report Button is Displayed : "+TransactionReportGetReportButton);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 
 
 	}
@@ -1062,12 +1103,12 @@ public class AllOperationsUiSprintTwo
 	public void Settings() throws InterruptedException
 	{
 		
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		boolean Settings = SettingsLnk.isDisplayed();
 		System.out.println("Settings is Displayed : "+Settings);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		SettingsLnk.click();
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 
 
 	}
@@ -1078,13 +1119,13 @@ public class AllOperationsUiSprintTwo
 		Thread.sleep(3000);
 		boolean OtpList = OtpListLnk.isDisplayed();
 		System.out.println("Otp List is Displayed : "+OtpList);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		OtpListLnk.click();
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		
 		boolean OtpListSearchEdit = OtpListSearchEdt.isDisplayed();
 		System.out.println("Otp List Search Edit is Displayed : "+OtpListSearchEdit);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 
 
 	}
@@ -1092,20 +1133,20 @@ public class AllOperationsUiSprintTwo
 	public void AppManagement() throws InterruptedException
 	{
 		
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		boolean AppManagement = AppManagementLnk.isDisplayed();
 		System.out.println("App Management is Displayed : "+AppManagement);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		AppManagementLnk.click();
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 
 		boolean AppManagementText = AppManagementTextLnk.isDisplayed();
 		System.out.println("App Management Text is Displayed : "+AppManagementText);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 
 		boolean AppManagementBootstrapButton = AppManagementBootstrapBtn.isDisplayed();
 		System.out.println("App Management Bootstrap Button is Displayed : "+AppManagementBootstrapButton);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		
 
 	}
@@ -1116,17 +1157,17 @@ public class AllOperationsUiSprintTwo
 		Thread.sleep(3000);
 		boolean PaymentManagement = PaymentManagementLnk.isDisplayed();
 		System.out.println("Payment Management is Displayed : "+PaymentManagement);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		PaymentManagementLnk.click();
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 
 		boolean AppPaymentManagementText = AppPaymentManagementTextLnk.isDisplayed();
 		System.out.println("App Payment Management Text is Displayed : "+AppPaymentManagementText);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 
 		boolean PaymentManagementBootstrapButton = PaymentManagementBootstrapBtn.isDisplayed();
 		System.out.println("PaymentManagementBootstrapButton is Displayed : "+PaymentManagementBootstrapButton);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 
 	
 	}
@@ -1136,61 +1177,61 @@ public class AllOperationsUiSprintTwo
 		Thread.sleep(3000);
 		boolean Roles = RolesLnk.isDisplayed();
 		System.out.println("Roles is Displayed : "+Roles);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		RolesLnk.click();
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 
 		boolean RolesListText = RolesListTextLnk.isDisplayed();
-		System.out.println("RolesListText is Displayed : "+RolesListText);
-		Thread.sleep(2000);
+		System.out.println("Roles List Text is Displayed : "+RolesListText);
+		Thread.sleep(3000);
 
 		boolean RolesSearchEdit = RolesSearchEdt.isDisplayed();
-		System.out.println("RolesSearchEdit is Displayed : "+RolesSearchEdit);
-		Thread.sleep(2000);
+		System.out.println("Roles Search Edit is Displayed : "+RolesSearchEdit);
+		Thread.sleep(3000);
 
 		boolean RolesAddRoleButton = RolesAddRoleBtn.isDisplayed();
-		System.out.println("RolesAddRoleButton is Displayed : "+RolesAddRoleButton);
-		Thread.sleep(2000);
+		System.out.println("Roles Add Role Button is Displayed : "+RolesAddRoleButton);
+		Thread.sleep(3000);
 
 		boolean RolesEditButton = RolesEditBtn.isDisplayed();
-		System.out.println("RolesEditButton is Displayed : "+RolesEditButton);
-		Thread.sleep(2000);
+		System.out.println("Roles Edit Button is Displayed : "+RolesEditButton);
+		Thread.sleep(3000);
 
 		boolean RolesDeleteButton = RolesDeleteBtn.isDisplayed();
-		System.out.println("RolesDeleteButton is Displayed : "+RolesDeleteButton);
-		Thread.sleep(2000);
+		System.out.println("Roles Delete Button is Displayed : "+RolesDeleteButton);
+		Thread.sleep(3000);
 
 	}
 	
 	public void FmsUsers() throws InterruptedException
     {
 		
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		boolean FmsUsers = FmsUsersLnk.isDisplayed();
-		System.out.println("FmsUsers is Displayed : "+FmsUsers);
-		Thread.sleep(2000);
+		System.out.println("Fms Users is Displayed : "+FmsUsers);
+		Thread.sleep(3000);
 		FmsUsersLnk.click();
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 
 		boolean FmsUsersText = FmsUsersTextLnk.isDisplayed();
-		System.out.println("FmsUsersText is Displayed : "+FmsUsersText);
-		Thread.sleep(2000);
+		System.out.println("Fms Users Text is Displayed : "+FmsUsersText);
+		Thread.sleep(3000);
 
 		boolean FmsUsersAddButton = FmsUsersAddBtn.isDisplayed();
-		System.out.println("FmsUsersAddButton is Displayed : "+FmsUsersAddButton);
-		Thread.sleep(2000);
+		System.out.println("Fms Users Add Button is Displayed : "+FmsUsersAddButton);
+		Thread.sleep(3000);
 
 		boolean FmsUsersSearchEdit = FmsUsersSearchEdt.isDisplayed();
-		System.out.println("FmsUsersSearchEdit is Displayed : "+FmsUsersSearchEdit);
-		Thread.sleep(2000);
+		System.out.println("Fms Users Search Edit is Displayed : "+FmsUsersSearchEdit);
+		Thread.sleep(3000);
 
 		boolean FmsUsersEditButton = FmsUsersEditBtn.isDisplayed();
-		System.out.println("FmsUsersEditButton is Displayed : "+FmsUsersEditButton);
-		Thread.sleep(2000);
+		System.out.println("Fms Users Edit Button is Displayed : "+FmsUsersEditButton);
+		Thread.sleep(3000);
 
 		boolean FmsUsersDeleteButton = FmsUsersDeleteBtn.isDisplayed();
-		System.out.println("FmsUsersDeleteButton is Displayed : "+FmsUsersDeleteButton);
-		Thread.sleep(2000);
+		System.out.println("Fms Users Delete Button is Displayed : "+FmsUsersDeleteButton);
+		Thread.sleep(3000);
 
 
     }

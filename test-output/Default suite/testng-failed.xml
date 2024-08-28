@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Sprint_Two.SprintTwoAllOperations">
+      <class name="Sprint_One.SprintOneAllOperations">
         <methods>
           <include name="setup"/>
-          <include name="AllOperationsUiTest"/>
+          <include name="AllactionsUiTest"/>
         </methods>
-      </class> <!-- Sprint_Two.SprintTwoAllOperations -->
+      </class> <!-- Sprint_One.SprintOneAllOperations -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
