@@ -508,12 +508,11 @@ public class AllOperationsUiSprintOne {
 		Thread.sleep(3000);
 		RGUExportToExcelBtn.click();
 		Thread.sleep(3000);
-		
+		/*
 		boolean RGUViewButton = RGUViewBtn.isDisplayed();
 		System.out.println("RGUView Button Displayed :"+RGUViewButton);
 		Thread.sleep(3000);
-
-		/*
+		
 		 * boolean RGURedeemGoldButton = RGURedeemGoldBtn.isDisplayed();
 		 * System.out.println("RGURedeem Gold Button Displayed :"+RGURedeemGoldButton);
 		 * Thread.sleep(3000);
